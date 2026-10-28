@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.db
+
+# The Lead's hidden notes stay out of git until the reveal stage moves them.
+.kickoff-private/
+
+# Personal Claude Code settings
+.claude/settings.local.json
