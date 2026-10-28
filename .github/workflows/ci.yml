@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  harness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.0.0
+        with:
+          python-version: "3.11"
+      - run: uv sync --locked
+      - run: uv run pytest -q
+      # Lint every committed kickoff folder, so a ticket can't be merged in a broken format.
+      - name: Lint kickoff folders
+        run: |
+          shopt -s nullglob
+          for folder in intent/20*/; do
+            uv run python scripts/lint_tickets.py "$folder"
+          done
