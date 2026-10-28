@@ -9,7 +9,12 @@ Glossary for Release Planner. Terms only; how things are built lives in CLAUDE.m
 - **Campaign**: the marketing plan for one film's release. A film has at most one campaign in the baseline.
 - **Campaign status**: `draft`, `active` or `finished`.
 - **Channel**: where marketing goes out: `instagram`, `tiktok`, `x`, `newsletter`. A fixed list in the baseline.
-- **Post**: one piece of marketing content on one channel. Not in the baseline; a likely first feature.
+- **Post**: one piece of marketing content (text only, 1–280 characters) on one channel, planned for one day, under a film's campaign. Added by the post-scheduling feature. The marketer publishes it by hand; the app only plans it.
+- **Post day**: the calendar date a post should go out (`post_date`). A date only, no time, read in `APP_TIMEZONE`.
+- **Upcoming posts**: a film's posts whose post day is today or later (in `APP_TIMEZONE`), soonest first.
+- **Past posts**: a film's posts whose post day is before today, most recent first. No posted/missed status.
+- **Channel removed**: a flag shown on a post whose channel is no longer ticked on its campaign. The post is kept.
+- **AI draft**: a first version of a post's text written by the Claude API on request ("Draft with AI"), filled into the form for the marketer to edit. Not saved until the marketer saves.
 
 ## Kickoff
 

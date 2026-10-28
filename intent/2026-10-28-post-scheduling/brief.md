@@ -1,0 +1,3 @@
+# Brief: plan our posts
+
+Hi team, right now I keep the posting plan for each film in a spreadsheet and things slip through before release days. I'd like to plan the actual posts inside Release Planner, under each film's campaign, with the day each one should go out. Keep it simple: one post per channel for a film is plenty. It would also be great if the tool could help me write a first version of the text, because writing for four channels is the slowest part. I want to see at a glance what's coming up next for a film. The business reason: we're a tiny team and missed posts cost us viewers on launch week.
