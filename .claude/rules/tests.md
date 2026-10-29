@@ -1,3 +1,9 @@
+---
+paths:
+  - "intent/**"
+  - "scripts/lint_tickets.py"
+---
+
 # Test matrix format
 
 `intent/<folder>/test-matrix.md`, written by the QA agent. `scripts/lint_tickets.py` checks coverage.

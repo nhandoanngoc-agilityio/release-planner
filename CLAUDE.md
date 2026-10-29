@@ -6,8 +6,6 @@ Today the app exists only on paper: `docs/baseline.md` describes it. No product 
 
 ## Commands
 
-- Install: `uv sync`
-- Test the harness: `uv run pytest`
 - Lint tickets: `uv run python scripts/lint_tickets.py intent/<folder>`
 - Score a kickoff: `uv run python scripts/score_kickoff.py intent/<folder>`
 
@@ -15,9 +13,6 @@ Today the app exists only on paper: `docs/baseline.md` describes it. No product 
 
 - `docs/baseline.md`: the app as it exists. Features are briefed on top of it.
 - `intent/<date>-<slug>/`: one folder per feature kickoff (see "Kickoff" below). `intent/CURRENT` names the active folder.
-- `.claude/agents/`: the four kickoff roles: `lead`, `ba`, `qa`, `dev`.
-- `.claude/skills/`: `kickoff` (runs the pipeline), `write-ticket`, `test-matrix`.
-- `.claude/hooks/`: deterministic guards for the kickoff, wired in `.claude/settings.json`. Tested in `tests/`.
 - `.kickoff-private/`: the Lead's hidden notes. Gitignored until the reveal.
 - `scripts/`: ticket linter and scorecard generator. Standard library only.
 

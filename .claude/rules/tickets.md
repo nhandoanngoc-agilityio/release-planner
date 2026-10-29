@@ -1,3 +1,9 @@
+---
+paths:
+  - "intent/**"
+  - "scripts/lint_tickets.py"
+---
+
 # Ticket format
 
 `scripts/lint_tickets.py` enforces this file. If you change one, change both.
